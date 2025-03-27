@@ -1,6 +1,6 @@
 # 🗂️ Task Manager - Frontend
 
-Este es el **frontend** del proyecto *Task Manager*, desarrollado como parte de una prueba técnica. Construido con **Vue 3 + Vuetify**, permite gestionar tareas con autenticación JWT y visualización tipo Kanban.
+Este es el **frontend** del proyecto *Task Manager*, desarrollado como parte de la prueba técnica. Construido con **Vue 3 + Vuetify**, permite gestionar tareas con autenticación JWT y visualización tipo Kanban.
 
 ---
 
