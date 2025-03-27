@@ -8,10 +8,14 @@
             <v-text-field v-model="username" label="Usuario" prepend-inner-icon="mdi-account" />
             <v-text-field v-model="password" label="Contraseña" prepend-inner-icon="mdi-lock" type="password" />
           </v-card-text>
-          <v-card-actions>
-            <v-btn color="primary" block @click="login">Entrar</v-btn>
-            <v-btn text block @click="router.push('/register')">¿No tienes cuenta? Regístrate</v-btn>
-          </v-card-actions>
+          <v-card-text>
+  <v-btn color="primary" class="mb-2" block @click="login">
+    Entrar
+  </v-btn>
+  <v-btn variant="text" block @click="router.push('/register')">
+    ¿No tienes cuenta? Regístrate
+  </v-btn>
+</v-card-text>
         </v-card>
       </v-col>
     </v-row>
@@ -20,8 +24,8 @@
 
 <script setup>
 import { ref } from 'vue'
-import axios from 'axios'
 import { useRouter } from 'vue-router'
+import api from '@/services/api'
 
 const username = ref('')
 const password = ref('')
@@ -29,7 +33,7 @@ const router = useRouter()
 
 const login = async () => {
   try {
-    const { data } = await axios.post('/api/login', {
+    const { data } = await api.post('/login', {
       username: username.value,
       password: password.value
     })

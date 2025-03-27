@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <v-app-bar app color="primary" dark>
-      <v-toolbar-title>Task Manager</v-toolbar-title>
+      <v-toolbar-title>Prueba técnica</v-toolbar-title>
       <v-spacer />
       <v-btn text @click="logout">Cerrar sesión</v-btn>
     </v-app-bar>

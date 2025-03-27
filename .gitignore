@@ -1,0 +1,21 @@
+/nbproject/private/
+/build
+/node_modules
+/nb_jr_remoting.cfg
+/rebel-remote.xml
+/.idea
+/rebel.xml
+.rebel.xml.bak
+.project
+npm-debug.log
+gitflow/
+# IDEs and editors
+.idea
+package-lock.json
+# System Files
+.DS_Store
+Thumbs.db
+.vite
+/dist
+.scannerwork
+public_html/swEnv.js
